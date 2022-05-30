@@ -6,10 +6,10 @@
 sh -c "$(curl -sSfL https://release.solana.com/v1.9.1/install)"
 ```
 
-add to global path:
+add path:
 
 ```sh
-
+export PATH="/home/gitpod/.local/share/solana/install/active_release/bin:$PATH"
 ```
 
 ## install anchor
@@ -18,8 +18,8 @@ add to global path:
 npm i -g @project-serum/anchor-cli
 ```
 
-build:
+## init anchor project
 
 ```sh
-cargo install --git https://github.com/project-serum/anchor --tag v0.24.2 anchor-cli --locked
+anchor init <your-project-name>
 ```
